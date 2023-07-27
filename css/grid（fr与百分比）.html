@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .wrap{
+        width: 500px;
+        display: grid;
+        overflow: auto;
+        grid-template-columns: repeat(2,1fr); /*子元素大小不一样的话会撑开*/
+        /*grid-template-columns: repeat(2,50%); */
+    }
+    .wrap>div{
+        height: 200px;
+    }
+    .red{
+        width: 500px;
+        background: red;
+    }
+    .green{
+        /*width: 400px;*/
+        background: green;
+    }
+</style>
+<body>
+    <div class="wrap">
+        <div class="red"></div>
+        <div class="green"></div>
+    </div>
+</body>
+</html>

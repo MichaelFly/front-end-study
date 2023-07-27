@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>我是测试的文字</div>
+<button onclick="getSelectedText()">按钮</button>
+
+<script>
+    const getSelectedText = () => {
+        const str = window.getSelection().toString();
+        console.log(str);
+    }
+
+    // getSelectedText();
+    // 返回选中的内容
+</script>
+</body>
+</html>

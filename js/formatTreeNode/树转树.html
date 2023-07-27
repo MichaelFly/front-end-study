@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const arrData = [{id:'1',items:[{id:'1-1'},{id:'1-2',items:[{id:'1-2-1'}]}]}]
+
+    const getArr = (arr) =>{
+        return arr.map(item=>{
+            if(item.items&&item.items.length){
+                return {val:item.id,children:getArr(item.items)}
+            }else{
+                return {val:item.id,}
+            }
+        })
+    }
+
+    console.log(getArr(arrData))
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="./data.js"></script>
+<script>
+    console.log(data)
+
+
+    const formatData = (list)=>{
+        const copyData = JSON.parse(JSON.stringify(data))
+        const treeList = copyData.reduce((prev, cur) => {
+            prev[cur['path']] = cur;
+            return prev
+        }, {})
+        console.log('treeList',treeList)
+        return list.reduce((prev,cur)=>{
+            const {path,tier} = cur;
+            const lastDotIdx = path.lastIndexOf('.');
+            const prPath = path.slice(0,lastDotIdx);
+            const parent = treeList[prPath]
+            if(parent){
+                parent.children ? parent.children.push(cur) : parent.children = [cur]
+            }else if(tier===1){
+                prev.push(cur)
+            }
+            return prev
+        },[])
+    }
+
+    const calcData = formatData(copyData);
+    console.log('calcData',calcData)
+</script>
+</body>
+</html>

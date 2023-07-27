@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .container{
+        width: 200px;
+        background: #dcdcdc;
+        overflow: hidden;
+    }
+    .textSlider{
+        display: inline-block;
+        white-space: nowrap;
+        padding-left: 100%;
+        animation: marquee 7s linear infinite both;
+    }
+    @keyframes marquee {
+        to {
+            -webkit-transform: translate3d(-100%,0,0);
+            transform: translate3d(-100%,0,0)
+        }
+    }
+
+</style>
+<body>
+<div class="container">
+    <div class="textSlider">[纯文字]这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏[结束]</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const findNum = (num1,num2) =>{
+        const arr = []
+        for (let i = 0; i <= num1; i++) {
+            if(num1%i===0){
+                arr.push(i)
+            }
+        }
+        const arr1 = []
+        for (let j = 0; j <= arr.length; j++) {
+            if(num2%arr[j]===0){
+                arr1.push(arr[j])
+            }
+        }
+        // console.log(arr,arr1)
+        return arr1[arr1.length-1]
+    }
+    const num = findNum(1245,1200)
+    console.log(num)
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const isEmpty = obj => Reflect.ownKeys(obj).length === 0 && obj.constructor === Object;
+    console.log(isEmpty({})) // true
+    console.log(isEmpty({a:"not empty"})) //false
+</script>
+</body>
+</html>

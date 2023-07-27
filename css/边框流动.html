@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .box::after {
+        content: '';
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(to bottom, #09AAFA, #fff);
+        animation: rotate linear 2s infinite;
+        position: absolute;
+        z-index: -11;
+        transform: rotate(0deg);
+        margin-left: -15px;
+        left: -50%;
+        top: -50%;
+    }
+
+    .box {
+        width: 200px;
+        height: 200px;
+        margin-left: 200px;
+        position: relative;
+        margin-top: 100px;
+        overflow: hidden;
+    }
+
+    .div {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        bottom: 2px;
+        right: 2px;
+        background-color: #fff;
+        z-index: 999999;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+
+        }
+
+        50% {
+            transform: rotate(180deg);
+
+        }
+
+        100% {
+            transform: rotate(359deg);
+
+        }
+    }
+</style>
+<body>
+<div class="box">
+    <div class="div">
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .bb, .bb::before, .bb::after {
+
+        position: absolute;
+
+        top: 0;
+
+        bottom: 0;
+
+        left: 0;
+
+        right: 0;
+
+    }
+
+
+
+    .bb {
+
+        width: 400px;
+
+        height: 200px;
+
+        margin: auto;
+
+        box-shadow: inset 0 0 0 1px rgba(105, 202, 98, 0.5);
+
+    }
+
+    .bb::before, .bb::after {
+        /*display: none;*/
+        color: red;
+        content: '';
+
+        z-index: -1;
+
+        margin: -5%;
+
+        box-shadow: inset 0 0 0 2px;
+
+        animation: clipMe 4s linear infinite;
+        /*clip: rect(0px, 420px, 2px, 0px);*/
+
+
+    }
+
+    .bb::before {
+        /*display: block;*/
+        /*clip: rect(0px, 440px, 2px, 0px);*/
+        /*clip: rect(0px, 2px, 240px, 0px);*/
+        /*clip: rect(238px, 440px, 240px, 0px);*/
+        /*clip: rect(0px, 440px, 240px, 438px);*/
+        animation-delay: -2s;
+
+    }
+
+    @keyframes clipMe {
+        /*
+            440:1.7rem
+            2:0.02rem
+            240:0.7rem
+            238:0.68rem
+            438:1.68rem
+        */
+        0%, 100% {
+            clip: rect(0px, 440px, 2px, 0px);
+            /*clip: rect(0px, 220px, 2px, 0px);*/
+
+        }
+
+        25% {
+            clip: rect(0px, 2px, 240px, 0px);
+            /*clip: rect(0px, 2px, 220px, 0px);*/
+        /*    rect(0, 0.02rem, 1.7rem, 0);*/
+
+        }
+
+        50% {
+            clip: rect(238px, 440px, 240px, 0px);
+            /*clip: rect(218px, 220px, 220px, 0px);*/
+        /*rect(0.68rem, 1.7rem, 0.7rem, 0)*/
+        }
+
+        75% {
+            clip: rect(0px, 440px, 240px, 438px);
+            /*clip: rect(0px, 220px, 220px, 218px);*/
+        /*    rect(0, 1.7rem, 0.7rem, 1.48rem)*/
+
+        }
+
+    }
+</style>
+<body>
+    <div class="bb">1231231</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn">123123</button>
+<button id="btn1">123123</button>
+<script src="./../../jquery.js"></script>
+<script>
+    const elementIsInFocus = (el) => (el === document.activeElement);
+    $('#btn').click(function (){
+        const active = elementIsInFocus(document.getElementById('btn'))
+        console.log(active)
+    })
+    $('#btn1').click(function (){
+        const active = elementIsInFocus(document.getElementById('btn'))
+        console.log(active)
+    })
+
+    // 元素处于焦点返回true，反之返回false
+</script>
+</body>
+</html>

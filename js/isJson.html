@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // static dsToDefObjArray(v: any) {
+    //     const data = this.formatDataSource(v);
+    //     const findCorrect = (val) => {
+    //         return val.filter((item) => {
+    //             return typeof item === 'object' && item !== null && Object.keys(item).length;
+    //         });
+    //     };
+    //     return data instanceof Array && findCorrect(data).length === data.length ? data : [];
+    // }
+
+    const isNotEmptyJson = (val)=>{
+        return typeof val === 'object' && !!Object.keys(val).length
+    }
+
+    const isNotEmptyJsonArr = (val) => {
+        if(!(val instanceof Array)) return false;
+        if(val.length<=0) return false
+        return !!val.filter((item) => {
+            return isNotEmptyJson(item);
+        }).length;
+    };
+
+    console.log(isNotEmptyJsonArr(['s']))
+    console.log(isNotEmptyJson({a:2}))
+</script>
+</body>
+</html>

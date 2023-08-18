@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<fieldset>
+    <legend>Profile Update</legend>
+    <form>
+
+        <div class="row">
+            <label for="name">Name: </label>
+            <input id="name" type="text" pattern="([a-zA-Z0-9]\s?)+" placeholder="Enter full name" required />
+            <span></span>
+        </div>
+
+        <div class="row">
+            <label for="email">Email: </label>
+            <input id="email" type="email" placeholder="Your email" required />
+            <span></span>
+        </div>
+
+        <div class="row">
+            <label for="website">Website: </label>
+            <input id="website" type="url" placeholder="Your website" />
+            <span></span>
+        </div>
+
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+    </form>
+</fieldset>
+</body>
+</html>

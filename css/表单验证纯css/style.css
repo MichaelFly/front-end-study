@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    background: beige;
+    color: black;
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+input + span {
+    position: relative;
+}
+
+input + span::before {
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+}
+
+input:not(:placeholder-shown):invalid {
+    border: 2px solid red;
+}
+
+input:not(:placeholder-shown):invalid + span::before {
+    content: "✖";
+    color: red;
+}
+
+input:not(:placeholder-shown):valid + span::before {
+    content: "✓";
+    color: green;
+}
+
+input:optional {
+    border: 1.2px dashed;
+}
+input:optional:focus {
+    outline: 2px dashed;
+    border-color: transparent;
+}

@@ -1,0 +1,30 @@
+body {
+    background: #000;
+}
+.container {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #000;
+    filter: contrast(30);
+}
+.text {
+    font-size: 100px;
+    /*letter-spacing: -50px;*/
+    color: #fff;
+    animation: showup 3s linear forwards infinite;
+}
+@keyframes showup {
+    0% {
+        letter-spacing: 10px;
+        filter: blur(2px);
+    }
+    50% {
+        filter: blur(10px);
+        letter-spacing: -50px;
+    }
+    100% {
+        letter-spacing: 10px;
+        filter: blur(2px);
+    }
+
+}

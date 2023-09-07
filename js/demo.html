@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .wrap{
+        height: 60px;
+        overflow: hidden;
+    }
+    .wrap .content{
+        animation: moveUp linear 20s infinite;
+    }
+    .wrap .content div{
+        height: 20px;
+    }
+    @keyframes moveUp {
+        0%{
+            margin-top: 0;
+        }
+        100%{
+            margin-top: -100px;
+        }
+    }
+</style>
+<body>
+<div class="wrap">
+    <div class="content" id="content">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+</div>
+<script src="./../jquery.js"></script>
+<script>
+    const arr = [11,12,13,14,15];
+    setInterval(()=>{
+        const x = arr.shift()
+        const divs =$('.content div')
+        for (let i = 0; i < divs; i++) {
+            $(divs[i]).html(x-10+i)
+        }
+
+    },6.66666667*1000)
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.screen-root {
+  height: 100%;
+  width: 100%;
+}
+.screen {
+  display: inline-block;
+  width: 1920px;
+  height: 1080px;
+  transform-origin: 0 0;
+  position: absolute;
+  left: 50%;
+  background: aquamarine;
+}
+

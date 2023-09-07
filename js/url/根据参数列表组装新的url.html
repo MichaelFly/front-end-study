@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script>
+        const paramObj = [{a: "a"}, {b: "c"}, {d: "e"}]
+        // const oldUrl = "http://localhost:80/a/b";
+        const oldUrl = "http://localhost:80/a/b?f=g";
+
+        function assembleUrl(paramMap, oldURL) {
+            let paramUrl = paramMap.reduce((prev, curr) => {
+                for (let key in curr) {
+                    prev += (`${key}=${curr[key]}&`)
+                }
+                return prev
+            }, "");
+            paramUrl = paramUrl.slice(0, -1);
+            return oldURL.indexOf("?") === -1 ? oldURL + "?" + paramUrl : oldURL + "&" + paramUrl;
+        }
+
+        console.log(assembleUrl(paramObj, oldUrl));
+
+    </script>
+
+</head>
+
+
+<body></body>
+
+</html>

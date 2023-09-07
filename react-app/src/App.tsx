@@ -3,12 +3,13 @@
 // import WebRtc from "./WebRtc";
 // import HookDemo from "./HookDemo";
 // @ts-ignore
-import CompNoData from 'comp-no-data'
+// import CompNoData from 'comp-no-data'
+import JsonEdit from './JsonEdit'
 
 function App() {
   return (
     <div className="App">
-      <CompNoData txt={"adsasd"}/>
+      <JsonEdit/>
       {/*<WebRtc />*/}
     </div>
   );

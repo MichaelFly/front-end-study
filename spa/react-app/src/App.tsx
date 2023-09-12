@@ -4,13 +4,15 @@
 // import HookDemo from "./HookDemo";
 // @ts-ignore
 // import CompNoData from 'comp-no-data'
-import JsonEdit from './JsonEdit'
+// import JsonEdit from './JsonEdit'
+import DomToImg from './DomToImg'
 
 function App() {
   return (
     <div className="App">
-      <JsonEdit/>
+      {/*<JsonEdit/>*/}
       {/*<WebRtc />*/}
+      <DomToImg />
     </div>
   );
 }

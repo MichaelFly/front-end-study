@@ -1,0 +1,17 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #09aafa;
+  display: flex;
+  .left{
+    width: 150px;
+    height: 100%;
+    background: #33b249;
+  }
+  .content{
+    flex: 1;
+    height: 100%;
+    background: #535bf2;
+  }
+
+}

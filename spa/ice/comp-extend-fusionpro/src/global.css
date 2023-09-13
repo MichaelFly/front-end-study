@@ -1,0 +1,14 @@
+/**
+ * The global.css defines the style of the entire project,
+ * ice.js will globally import this file by default.
+ */
+@import '@alifd/theme-design-pro/variables.css';
+@import '@alifd/theme-design-pro/dist/next.var.css';
+:root {
+  --primary: #3178f6;
+  --bg-primary: white;
+}
+
+body {
+  margin: 0;
+}

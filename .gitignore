@@ -1,3 +1,5 @@
 # dependencies
 /node_modules
 .idea
+.npm
+/spa/webauthndemo/node_modules/

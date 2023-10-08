@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function isString(str) {
+        return Object.prototype.toString.call(str) === '[object String]';
+    }
+    console.log(isString('1'))
+    console.log(isString('0'))
+    console.log(isString(''))
+    console.log(isString('asd'))
+    console.log(isString(1))
+    console.log(isString(0))
+    console.log(isString(null))
+    console.log(isString(undefined))
+    console.log(isString(true))
+    console.log(isString(false))
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+[
+  {
+    "id": "layout",
+    "file": "layout.tsx",
+    "componentName": "layout",
+    "layout": true,
+    "exports": [
+      "default"
+    ],
+    "children": [
+      {
+        "path": "blog",
+        "index": true,
+        "id": "blog",
+        "parentId": "layout",
+        "file": "blog/index.tsx",
+        "componentName": "blog-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "blog/a",
+        "id": "blog/a",
+        "parentId": "layout",
+        "file": "blog/a.tsx",
+        "componentName": "blog-a",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "index": true,
+        "id": "/",
+        "parentId": "layout",
+        "file": "index.tsx",
+        "componentName": "index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "en-US",
+    "id": "en-US/layout",
+    "file": "layout.tsx",
+    "componentName": "layout",
+    "layout": true,
+    "exports": [
+      "default"
+    ],
+    "children": [
+      {
+        "path": "blog",
+        "index": true,
+        "id": "en-US/blog",
+        "parentId": "en-US/layout",
+        "file": "blog/index.tsx",
+        "componentName": "blog-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "blog/a",
+        "id": "en-US/blog/a",
+        "parentId": "en-US/layout",
+        "file": "blog/a.tsx",
+        "componentName": "blog-a",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "index": true,
+        "id": "en-US/",
+        "parentId": "en-US/layout",
+        "file": "index.tsx",
+        "componentName": "index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "ko-KR",
+    "id": "ko-KR/layout",
+    "file": "layout.tsx",
+    "componentName": "layout",
+    "layout": true,
+    "exports": [
+      "default"
+    ],
+    "children": [
+      {
+        "path": "blog",
+        "index": true,
+        "id": "ko-KR/blog",
+        "parentId": "ko-KR/layout",
+        "file": "blog/index.tsx",
+        "componentName": "blog-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "blog/a",
+        "id": "ko-KR/blog/a",
+        "parentId": "ko-KR/layout",
+        "file": "blog/a.tsx",
+        "componentName": "blog-a",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "index": true,
+        "id": "ko-KR/",
+        "parentId": "ko-KR/layout",
+        "file": "index.tsx",
+        "componentName": "index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // 判断参数列表的key是否重复，用于输入框blur重置重复key
+    // ex:[{key:'a',...},{key:['a','b'],...}] => return false
+     const paramHasRepeatName = (params, nameKey) => {
+        const format = params.map((itm) => itm[nameKey]).flat();
+        return format.length > [...new Set(format)].length;
+    };
+</script>
+</body>
+</html>

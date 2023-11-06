@@ -5,14 +5,16 @@
 // @ts-ignore
 // import CompNoData from 'comp-no-data'
 // import JsonEdit from './JsonEdit'
-import DomToImg from './DomToImg'
+// import DomToImg from './DomToImg'
+import WebAuthnSupport from './WebAuthnSupport'
 
 function App() {
   return (
     <div className="App">
       {/*<JsonEdit/>*/}
       {/*<WebRtc />*/}
-      <DomToImg />
+      {/*<DomToImg />*/}
+        <WebAuthnSupport/>
     </div>
   );
 }

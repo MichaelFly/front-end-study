@@ -6,7 +6,8 @@
 // import CompNoData from 'comp-no-data'
 // import JsonEdit from './JsonEdit'
 // import DomToImg from './DomToImg'
-import WebAuthnSupport from './WebAuthnSupport'
+// import WebAuthnSupport from './WebAuthnSupport'
+import ScratchCard from './ScratchCard'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/*<JsonEdit/>*/}
       {/*<WebRtc />*/}
       {/*<DomToImg />*/}
-        <WebAuthnSupport/>
+      {/*  <WebAuthnSupport/>*/}
+        <ScratchCard/>
     </div>
   );
 }

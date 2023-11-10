@@ -1,0 +1,27 @@
+{
+  "short_name": "authn-pwa",
+  "name": "authn-pwa",
+  "description": "",
+  "scope": "/",
+  "start_url": "/pwa?source=pwa",
+  "display": "standalone",
+  "background_color": "#fa2c19",
+  "theme_color": "#fa2c19",
+  "icons": [
+    {
+      "src": "./icons/icon_vector.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./icons/icon_x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./icons/icon_x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

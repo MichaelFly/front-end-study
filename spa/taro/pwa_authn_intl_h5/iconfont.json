@@ -1,0 +1,10 @@
+{
+    "symbol_url": "//at.alicdn.com/t/c/font_4293171_2xpu1vfh2b3.js",
+    "save_dir": "./src/components/iconfont",
+    "use_typescript": false,
+    "platforms": ["h5"],
+    "use_rpx": true,
+    "trim_icon_prefix": "icon",
+    "default_icon_size": 18,
+    "design_width": 750
+}

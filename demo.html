@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const jsonData = {
+        "3th:AAEbEk4wA": [
+            {
+                "source": {
+                    "type": "rpc",
+                    "data": "3th:AAEbEk4wA",
+                    "mode": "api",
+                    "reqParams": [
+                        {
+                            "name": "mach_no",
+                            "source": "comp",
+                            "value": "",
+                            "comp": "99f91313-78b5-467a-b92e-72b724dc7021"
+                        },
+                        {
+                            "name": "date",
+                            "source": "fix",
+                            "value": ""
+                        }
+                    ]
+                },
+                "objId": "a7ff63e2-e453-438a-9eb2-92d1b0564c88",
+                "key": "chartData",
+                "objName": "折线图_4fc2",
+                "clazz": "line",
+                "response": {
+                    "ok": true,
+                    "loading": false,
+                    "data": []
+                }
+            }
+        ],
+        "sys:sys_thing_snap": [
+            {
+                "source": {
+                    "type": "rpc",
+                    "data": "sys:sys_thing_snap",
+                    "mode": "api",
+                    "isPublish": false,
+                    "reqParams": [],
+                    "hasEnv": false,
+                    "hasRun": false,
+                    "hasErr": false,
+                    "dk": "AAATBDafVBA",
+                    "mk": "AAAM6ySfVBA",
+                    "transformJs": "function _filter(data) {\n return data[0].name;\n}"
+                },
+                "objId": "99f91313-78b5-467a-b92e-72b724dc7021",
+                "key": "text",
+                "objName": "文字_757d",
+                "clazz": "text",
+                "response": {
+                    "ok": true,
+                    "loading": false,
+                    "data": "=liuxy-01-001"
+                }
+            }
+        ],
+        "sys:sys_9": [
+            {
+                "source": {
+                    "type": "rpc",
+                    "data": "sys:sys_9",
+                    "mode": "api",
+                    "reqParams": [],
+                    "isPublish": false,
+                    "timer": 1100000
+                },
+                "objId": "58fa533b-6e3b-409d-934d-d851c315a001",
+                "key": "tableData",
+                "objName": "列表_d16c",
+                "clazz": "scroll",
+                "response": {
+                    "ok": true,
+                    "loading": false,
+                    "data": [
+                        {
+                            "count": 2,
+                            "mach": "model-01"
+                        }
+                    ]
+                }
+            }
+        ]
+    };
+
+    //使用递归的方式实现数组、对象的深拷贝
+
+    function deepClone (obj) {
+
+        let objClone = Array.isArray(obj) ? [] : {};
+
+        if (obj && typeof obj === "object") {
+
+            for (var key in obj) {
+
+                if (obj.hasOwnProperty(key)) {
+
+                    //判断ojb子元素是否为对象，如果是，递归复制
+
+                    if (obj[key] && typeof obj[key] === "object") {
+
+                        objClone[key] = deepClone(obj[key]);
+
+                    } else {
+
+                        //如果不是，简单复制
+
+                        objClone[key] = obj[key];
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        return objClone;
+
+    };
+
+    // Call the function with your JSON data
+    const deep = deepClone(jsonData);
+    console.log('deep',deep)
+
+    const arr = [1,2,3];
+    const cpArr = []
+    for (const arrKey in arr) {
+        console.log('arrKey',arrKey);
+        cpArr[arrKey] = arrKey
+    }
+    console.log('cpArr',cpArr)
+    arr.shift();
+    console.log('arr',arr)
+    console.log('cpArr',cpArr)
+</script>
+</body>
+</html>

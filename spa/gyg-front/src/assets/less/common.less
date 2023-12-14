@@ -1,0 +1,400 @@
+/*1 重定义浏览器默认样式
+	Name:			style_reset
+	Explain:		重定义浏览器默认样式
+*/
+html, body, h1, h2, h3, h4, h5, h6, hr, p, iframe, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td, fieldset {
+  font-family: "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, tahoma, arial, "WenQuanYi Micro Hei", Verdana, sans-serif, "\5B8B\4F53";
+  margin: 0;
+  padding: 0
+}
+
+ul, ol, dl {
+  list-style-type: none
+}
+
+.container {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+
+@media all and (max-width: 1600px) {
+  html {
+    font-size: 52.5%
+  }
+}
+
+@media all and (max-width: 1500px) {
+  html {
+    font-size: 42.5%
+  }
+}
+
+@media all and (max-width: 1000px) {
+  html {
+    font-size: 100%
+  }
+}
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 400
+}
+
+input, button, textarea, select, optgroup, option {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+a, area {
+  outline: none;
+  //blr: expression(this.onFocus=this.blur())
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer
+}
+
+a:hover {
+  text-decoration: none;
+  outline: none
+}
+
+a.ie6:hover {
+  zoom: 1
+}
+
+a:focus {
+  outline: none
+}
+
+a:hover, a:active {
+  outline: none
+}
+
+:focus {
+  outline: none
+}
+
+sub, sup {
+  vertical-align: baseline
+}
+
+/*img*/
+img {
+  border: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic
+}
+
+/*HTML5 reset*/
+header, footer, section, aside, details, menu, article, section, nav, address, hgroup, figure, figcaption, legend {
+  display: block;
+  margin: 0;
+  padding: 0
+}
+
+time {
+  display: inline
+}
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1
+}
+
+audio:not([controls]) {
+  display: none
+}
+
+svg:not(:root) {
+  overflow: hidden
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+/*清除浮动
+	Name:			style_clearfix
+	Example:		class="clearfix|cl"
+	Explain:		clearfix（简写cl）避免因子元素浮动而导致的父元素高度缺失的问题
+*/
+.cl:after, .clearfix:after {
+  content: "\20";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+
+/*公共提示框样式*/
+.promptBox {
+  &.el-message-box {
+    border-radius: 0;
+    width: 270px;
+    .el-message-box__header {
+      background: #f6f7fb;
+      .el-message-box__title {
+        font-size: 16px;
+        color: #586d80;
+      }
+    }
+    .el-message-box__content {
+      padding: 20px 15px;
+      .el-message-box__message {
+        color: #7b99b3;
+        font-size: 16px;
+      }
+    }
+    .el-message-box__btns {
+      .el-button--small {
+        padding: 6px 15px;
+        width: 70px;
+        border-radius: 0;
+        color: #fff;
+        font-size: 16px;
+      }
+      .el-button--default {
+        background: #d1dee8;
+      }
+      .el-button--primary {
+        background: #108cee;
+      }
+    }
+  }
+}
+
+/*重写element样式*/
+//.el-menu-item:focus, .el-menu-item:hover {
+//  background: none;
+//}
+
+.flyMenu.el-menu--horizontal > .el-menu-item a, .flyMenu.el-menu--horizontal > .el-menu-item a:hover {
+  display: block;
+  padding: 0 15px;
+}
+
+.el-main {
+  padding: 0;
+}
+
+.indexWrap .banner .el-carousel__indicators {
+  bottom: 50px;
+}
+
+.istop {
+  font-style: normal;
+  color: #fc8f8f;
+}
+
+/*新闻类型*/
+.newsType {
+  display: inline-block;
+  height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 20px;
+  color: #fff;
+  &.type1 {
+    background: #6ce4ff;
+  }
+  &.type2 {
+    background: #fc8f8f;
+  }
+  &.type3 {
+    background: #9ebcfe;
+  }
+}
+
+.breadWrap {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  .breadContent {
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 60px;
+    label {
+      float: left;
+      font-size: @font14;
+      color: @color1;
+    }
+    .breadRight {
+      float: left;
+      line-height: 60px;
+      /deep/ .el-breadcrumb__inner {
+        color: @color3;
+        font-weight: normal;
+      }
+      .el-breadcrumb__inner a:hover , .el-breadcrumb__inner:hover{
+        color: @blueTitle;
+      }
+    }
+  }
+}
+
+/*分页*/
+.el-pagination {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.el-pagination.is-background .el-pager li {
+  background: #fff;
+  &.active {
+    background: #06cfcf;
+  }
+}
+
+.indexBanner {
+  .el-carousel__arrow {
+    background: none;
+    width: 80px;
+    height: 80px;
+    i {
+      font-size: 80px;
+    }
+  }
+}
+/*放大二维码*/
+.el-popover {
+  background: none;
+  border: none;
+}
+/*导航*/
+.flyMenu.el-menu--horizontal{
+  border: none;
+}
+.el-menu--horizontal{
+  background: @bgColor;
+  border: none;
+}
+.el-dropdown-menu__item--divided:before, .el-menu, .el-menu--horizontal>.el-menu-item:focus, .el-menu--horizontal>.el-menu-item:hover, .el-menu--horizontal>.el-submenu .el-submenu__title:hover{
+  background: @bgColor;
+}
+.el-menu-item{
+  padding: 0;
+}
+.el-menu--horizontal .el-menu .el-menu-item{
+  background: none;
+}
+.el-menu--horizontal>.el-menu-item.is-active{
+  border-bottom: none;
+}
+.flyMenu.el-menu--horizontal>.el-menu-item.is-active{
+  color: #fff;
+}
+.flyMenu.el-menu--horizontal>.el-menu-item a.router-link-active, .flyMenu.el-menu--horizontal>.el-menu-item a:hover{
+  color: rgb(0, 219, 227);
+}
+.el-menu--popup>li>a{
+  color: #fff;
+}
+.el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
+  border: none;
+  color: #fff;
+}
+/*搜索框*/
+.searchContent{
+  margin-top: 7px;
+  .el-input{
+    background: rgba(255, 255, 255, 0.9);
+    height: 30px;
+    border-radius: 15px;
+    input{
+      height: 30px;
+      background: none;
+      border: none;
+    }
+    .el-input-group__append{
+      background: none;
+      border: none;
+      i.iconfont{
+        cursor: pointer;
+      }
+    }
+  }
+}
+/*警告框*/
+.el-message{
+  font-size: 0;
+  i{
+    font-size: 16px;
+  }
+}
+/*移动端适配*/
+.phoneTitle{
+  padding: .35rem 0 .35rem .3rem;
+  border-bottom: .02rem solid #dfdfdf;
+  h3{
+    color: @color1;
+    font-size: .45rem;
+    border-left: .1rem solid @blueTitle;
+    padding-left: .22rem;
+    font-weight: bold;
+  }
+}
+.slideWrap{
+  .el-carousel__button{
+    background-color: #02abfe;
+    width: .6rem;
+    height: .2rem;
+    border-radius: .1rem;
+  }
+}
+.listInput .el-input__inner{
+  border: none;
+  padding: 0 50px;
+}
+.inputArea textarea{
+  height: 100%;
+}
+.uploadPic .el-upload--picture-card{
+  width: 3.1rem;
+  height: 3.1rem;
+  border: .02rem dashed #dfdfdf;
+  i{
+    font-size: .6rem;
+    margin-top: 1.2rem;
+  }
+}
+.uploadPic .el-upload-list--picture-card .el-upload-list__item {
+  width: 3.1rem;
+  height: 3.1rem;
+}
+
+
+
+
+
+

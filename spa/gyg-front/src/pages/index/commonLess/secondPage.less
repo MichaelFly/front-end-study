@@ -1,0 +1,47 @@
+.wrap{
+  background: #f6f7fc;
+  .mainWrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+    //padding-bottom: 100px;
+    .filterWrap{
+      height: 60px;
+      background: #fff;
+      border: 1px solid @borderColor;
+      margin-bottom: 30px;
+      font-size: 0;
+      span.title{
+        float: left;
+        border-left: 5px solid #037edb;
+        color: @color1;
+        font-size: @font18;
+        margin-left: 15px;
+        padding-left: 15px;
+        margin-top: 20px;
+        padding-right: 35px;
+      }
+      label{
+        border-left: 1px solid @borderColor;
+        line-height: 60px;
+        font-size: @font14;
+        color: @color1;
+        padding-left: 30px;
+      }
+      span.item{
+        padding: 7px 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: @color2;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: @font14;
+        &.active{
+          color: #fff;
+          background: #16c6ef;
+        }
+      }
+    }
+  }
+}
+

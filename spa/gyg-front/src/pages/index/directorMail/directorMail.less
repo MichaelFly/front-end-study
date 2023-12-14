@@ -1,0 +1,185 @@
+.breadWrap {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  .breadContent {
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 60px;
+    label {
+      float: left;
+      font-size: @font14;
+      color: @color1;
+    }
+    .breadRight {
+      float: left;
+      line-height: 60px;
+      /deep/ .el-breadcrumb__inner {
+        color: @color3;
+        font-weight: normal;
+        &:hover{
+          color: @blueTitle;
+        }
+      }
+
+    }
+  }
+}
+.flyDiyTitle{
+  height: 60px;
+  line-height: 60px;
+  padding-left: 30px;
+  background: #fff;
+  border: 1px solid @borderColor;
+  font-size: 0;
+  span{
+    font-size: @font18;
+    color: @color1;
+    padding-left: 20px;
+    border-left: 4px solid #037edb;
+  }
+}
+.wrap{
+  width: 100%;
+  background: #f6f7f8;
+  .mailContent{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .secondWrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    .secondContent{
+      background: #ffffff;
+      border: 1px solid @borderColor;
+      padding: 50px 0px;
+      .firstContent{
+        width: 298px;
+        float: left;
+        border-right: 1px solid @borderColor;
+        >p{
+          margin: 0 70px;
+        }
+        >p:first-of-type{
+          color: #6f7b91;
+          font-size: 0;
+          .iconfont{
+            font-size: 32px;
+            color: #b08def;
+            //font-weight: bold;
+          }
+          .icon-qingdan{
+            color: #15cdb5;
+            font-size: 34px;
+          }
+          .icon-kuaisukaidian{
+            color: #f3528b;
+          }
+          .icon-shujubiao{
+            color: #f47553;
+            font-size: 30px;
+          }
+          >span:first-of-type{
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0 10px 0 20px;
+          }
+          >span:last-of-type{
+            font-size: 18px;
+
+          }
+        }
+        >p:nth-of-type(2){
+          font-size: @font14;
+          color: @color3;
+          margin-top: 15px;
+        }
+
+      }
+      .firstContent:not(:first-of-type){
+        >p{
+          margin-left: 50px;
+          margin-right: 0;
+          >p:first-of-type{
+            max-width: 100px;
+            .textOverflow();
+          }
+        }
+      }
+      .firstContent:last-of-type{
+        border-right: none;
+        float: right;
+      }
+    }
+  }
+  .formWrap{
+    width: 1200px;
+    margin: 20px auto;
+    .formContent{
+      padding: 40px;
+      border: 1px solid @borderColor;
+      background: #fff;
+      .codeInput{
+        width: 200px;
+        height: 36px;
+        border: 1px solid @borderColor;
+      }
+      .btns{
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid @borderColor;
+        text-align: center;
+        /deep/.el-button{
+          color: #fff;
+          background: #16c6ef;
+          padding: 15px 40px;
+          border: none;
+          font-size: @font16;
+          font-weight: bold;
+          &:hover{
+            background: #14b0d5;
+          }
+        }
+      }
+    }
+    .successContent{
+      padding-top: 80px;
+      padding-bottom: 190px;
+      border: 1px solid @borderColor;
+      background: #fff;
+      text-align: center;
+      >h1{
+        margin-bottom: 35px;
+        i.iconfont{
+          color: #24c866;
+          font-size: 60px;
+        }
+      }
+      >h3{
+        color: @color3;
+        font-size: 24px;
+      }
+      >p{
+        font-size: @font16;
+        color: #cbcbcb;
+        margin-top: 20px;
+      }
+      .btn{
+        margin-top: 40px;
+        >span{
+          display: inline-block;
+          width: 240px;
+          height: 45px;
+          color: #fff;
+          line-height: 45px;
+          font-size: @font16;
+          background: #24c6c8;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

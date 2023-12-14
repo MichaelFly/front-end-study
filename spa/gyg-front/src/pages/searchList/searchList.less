@@ -1,0 +1,175 @@
+.wrap{
+  width: 100%;
+  background: #f6f7f8;
+  .nav{
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    .first{
+      width: 1200px;
+      margin: 0 auto;
+      background: #ffffff;
+      line-height: 60px;
+      font-size: @font14;
+      >span:nth-of-type(1){
+        font-weight: bold;
+        color: @color1;
+      }
+     >span:nth-of-type(2){
+       color: @color3;
+       font-size: @font14;
+       cursor: pointer;
+       &:hover{
+         color: @blueTitle;
+       }
+     }
+      >span:nth-of-type(3){
+        color: @color3;
+        font-size: @font14;
+      }
+      >span:nth-of-type(4){
+        color: @color3;
+        font-size: @font14;
+      }
+    }
+  }
+  .content{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    .result{
+      border: 1px solid #dddddd;
+      background: #ffffff;
+      padding: 24px 38px 20px 18px;
+      font-size: 0;
+      >h3:nth-of-type(1){
+        >span:nth-of-type(1){
+          font-size: @font18;
+          color: @color1;
+          font-weight: bold;
+          border-left: 4px solid #037edb;
+          padding: 0 20px;
+        }
+        >span:nth-of-type(2){
+          font-size: @font16;
+          color: @color3;
+          span{
+            padding: 0 5px;
+            color: @color2;
+          }
+        }
+      }
+      >h3:nth-of-type(2){
+        padding: 20px  38px 0 31px;
+        font-size: @font16;
+        line-height: 40px;
+        //margin-right: 32px;
+        width: 1070px;
+        >div{
+          //border-bottom: 1px dashed #dddddd;
+          padding-bottom: 17px;
+          >span:nth-of-type(1){
+            color: @color1;
+            font-weight: bold;
+            padding-right: 32px;
+          }
+          >span:not(:first-child){
+            color: @color2;
+            //margin-right: 20px;
+            padding-right: 54px;
+            display: inline-block;
+            cursor: pointer;
+            &.active{
+              background: #16c6ef;
+              padding: 0px 8px;
+              border-radius: 3px;
+              margin-right: 28px;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      >h3:nth-of-type(3){
+        padding: 20px  38px 0 31px;
+        font-size: @font16;
+        >div{
+          border-bottom: 1px dashed #dddddd;
+          padding-bottom: 17px;
+          >span:nth-of-type(1){
+            color: @color1;
+            font-weight: bold;
+            padding-right: 32px;
+          }
+          >span:not(:first-child){
+            color: @color2;
+            margin-right: 60px;
+            cursor: pointer;
+            &.active{
+              background: #16c6ef;
+              padding: 8px 14px 7px 12px;
+              border-radius: 3px;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      >h3:nth-of-type(4){
+        padding: 20px 0px 20px 31px;
+        font-size: @font16;
+        p{
+          float: left;
+          padding-right: 12px;
+          font-weight: bold;
+        }
+        div{
+          float: left;
+        }
+        >div:nth-of-type(1){
+          span{
+            color:@color2;
+            margin-left: 25px;
+            cursor: pointer;
+            &.active{
+              background: #16c6ef;
+              padding: 8px 14px 7px 12px;
+              border-radius: 3px;
+              color: #ffffff;
+            }
+          }
+          .time{
+            float: right;
+            margin-left: 10px;
+            .confirm{
+              float: right;
+              background: #5686f4;
+              color: #ffffff;
+              margin-left: 10px;
+              padding: 6px;
+              border-radius: 2px;
+              margin-top: -5px;
+            }
+          }
+        }
+      }
+    }
+    .list{
+      margin-top: 20px;
+      //border: 1px solid #dddddd;
+    }
+    .none{
+      height: 300px;
+      background: #ffffff;
+      margin-top: 20px;
+      margin-bottom: 100px;
+      text-align: center;
+      padding: 40px;
+      border: 1px solid #dddddd;
+      p{
+        text-align: center;
+        line-height: 300px;
+        font-size: 50px;
+        color: @color3;
+      }
+    }
+  }
+}

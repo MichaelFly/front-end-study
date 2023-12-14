@@ -1,0 +1,42 @@
+.wrap{
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  .nav > span:not(:first-child){
+    cursor: pointer;
+  }
+  .title{
+    margin-top: 50px;
+    h3{
+      text-align: center;
+      font-size: @font20;
+    }
+    p{
+      font-size: @font14;
+      padding: 20px;
+      border-bottom: 1px solid @borderColor;
+      >span:nth-of-type(2){
+        float: right;
+      }
+    }
+  }
+  .content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid @borderColor;
+    overflow: hidden;
+  }
+  .contentFooter{
+    font-size: @font16;
+  }
+  .footer{
+    margin: 20px 40px;
+    span{
+      cursor: pointer;
+    }
+    span:nth-of-type(2){
+      float: right;
+    }
+
+  }
+}

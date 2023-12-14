@@ -1,0 +1,194 @@
+.wrap{
+  width: 100%;
+  background: #f6f7f8;
+  .nav {
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    .first {
+      width: 1200px;
+      margin: 0 auto;
+      background: #ffffff;
+      line-height: 60px;
+      font-size: @font14;
+      span{
+        color: @color3;
+        &:hover{
+          color: @blueTitle;
+        }
+      }
+      > span:nth-of-type(1) {
+        font-weight: bold;
+        color: @color1;
+      }
+      > span :not(:first-child) {
+        color: @color3;
+        font-size: @font14;
+      }
+      >span:nth-of-type(2){
+        cursor: pointer;
+      }
+      >span:nth-of-type(3){
+        cursor: pointer;
+      }
+      >span:nth-of-type(4){
+        &:hover{
+          color: @color3;
+        }
+      }
+    }
+  }
+  .content{
+    width: 1200px;
+    margin: 0 auto;
+    //margin-bottom: 100px;
+    .title{
+      margin-top: 40px;
+      font-size: @font18;
+      color: @color1;
+      background: #ffffff;
+      line-height: 20px;
+      border: 1px solid #dddddd;
+      padding: 20px 0 19px 17px;
+      h3{
+        border-left:4px solid #037edb;
+        padding-left: 20px;
+        font-weight: bold;
+        float: left;
+        margin-right: 36px;
+      }
+      span{
+        float: left;
+        cursor: pointer;
+        .iconfont{
+          width: 10px;
+          height: 10px;
+          color: #000;
+        }
+      }
+      >span:nth-of-type(1){
+        color: #dfdfdf;
+        margin-right: 38px;
+      }
+      >span:nth-of-type(2){
+        font-size: @font14;
+        color: @color1;
+        font-weight: bold;
+      }
+      >div:nth-of-type(1){
+        font-size: 0;
+        margin-left: 44px;
+        float: left;
+        span{
+          font-size: @font14;
+          color: @color2;
+          float: left;
+        }
+
+      }
+      >div:nth-of-type(2){
+        font-size: 0;
+        margin-left: 44px;
+        float: left;
+        cursor: pointer;
+        span{
+          font-size: @font14;
+          color: @color2;
+          float: left;
+        }
+        .fl{
+          float: left;
+          margin-top: 3px;
+          margin-left: 14px;
+        }
+      }
+      >div:nth-of-type(3){
+        float: right;
+        margin-right: 22px;
+        font-size: 0;
+        span{
+          float: right;
+          font-size: @font14;
+          color: #037edb;
+          margin-left: 13px;
+        }
+        i{
+          padding: 4px;
+          border:   1px solid #ddd;
+          color: #6db2fa;
+          &.active{
+            background: #dddddd;
+            border-radius: 3px;
+          }
+        }
+      }
+      //margin-bottom: 20px;
+    }
+    .list{
+      margin-top: 20px;
+      border:1px solid #dddddd;
+      padding: 34px 21px 31px 22px;
+      background: #ffffff;
+      min-height: 500px;
+
+      >div{
+        float: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        border-bottom: 1px dashed #D2D0C8;
+        &:hover{
+          p{
+            color: @blueTitle;
+          }
+          i{
+            background: @blueTitle;
+          }
+        }
+        i{
+          width: 5px;
+          height: 5px;
+          float: left;
+          background: #06cfcf;
+          margin-top: 8px;
+          margin-right: 10px;
+        }
+        .isTop{
+          float: left;
+          padding-right: 10px;
+          color: #fc8f8f;
+          font-size: @font14;
+        }
+        p{
+          float: left;
+          cursor: pointer;
+          font-size: @font14;
+          color: @color2;
+          padding-bottom: 10px;
+        }
+        >p:nth-of-type(1){
+          float: left;
+          min-width: 970px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        >p:nth-of-type(2){
+          float: right;
+        }
+
+
+        //p:nth-of-type(1){
+        //  min-width: 1020px;
+        //  float: left;
+        //  overflow: hidden;
+        //  text-overflow: ellipsis;
+        //  white-space: nowrap;
+        //}
+        //p:nth-of-type(2){
+        //  float: right;
+        //}
+      }
+    }
+  }
+}

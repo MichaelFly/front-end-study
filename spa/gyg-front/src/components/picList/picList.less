@@ -1,0 +1,84 @@
+.picListWrap{
+  width: 1200px;
+  margin: 0 auto;
+  .wrap{
+    padding: 40px 39px;
+    background: #ffffff;
+    min-height: 680px;
+    border: 1px solid #dddddd;
+    .item{
+      border-bottom: 1px solid #dddddd;
+      width: 530px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      &:nth-of-type(2n+1){
+        float: left;
+      }
+      &:nth-of-type(2n){
+        float: right;
+      }
+      &:hover{
+        border-bottom: 1px solid #007eff;
+        .title{
+          color: #205de9;
+        }
+      }
+      .img{
+        width: 150px;
+        height: 100px;
+        //background: red;
+        float: left;
+        margin-bottom: 20px;
+        font-size: 0;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .content{
+        float: left;
+        margin: 0px 0px 30px 29px;
+        h3{
+          font-size: @font16;
+          color: @color1;
+          width: 340px;
+          line-height: 1.6;
+          height: 50px;
+          //line-height: 16px;
+          text-overflow: -o-ellipsis-lastline;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+        .comt{
+          width: 325px;
+          height: 40px;
+          color: @color2;
+          font-size: @font14;
+          text-overflow: -o-ellipsis-lastline;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          line-height: 22px;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+        .time{
+          font-size: @font14;
+          color: @color3;
+          margin-top: 30px;
+        }
+
+      }
+      .footer{
+        text-align: center;
+        margin-top: 40px;
+        //margin-bottom: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.wrap {
+  background: #f6f7fc;
+  .mainWrap {
+    width: 1200px;
+    margin: 40px auto 100px;
+    >.content{
+      padding: 40px;
+      background: #fff;
+      border: 1px solid @borderColor;
+      .contentFooter{
+        border-top: 1px solid @borderColor;
+        margin: 80px 30px 20px;
+        padding-top: 30px;
+        >p{
+          font-size: @font18;
+          color: @color1;
+          cursor: pointer;
+          &:hover{
+            color: @bluehoverColor;
+          }
+
+          &.left{
+            float: left;
+            max-width: 400px;
+            .textOverflow()
+          }
+          &.right{
+            float: right;
+            max-width: 400px;
+            .textOverflow()
+          }
+        }
+        >p:nth-of-type(1){
+          margin-bottom: 20px;
+        }
+      }
+      >.noBorder{
+        border-top: none;
+      }
+    }
+  }
+}

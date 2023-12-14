@@ -1,0 +1,123 @@
+.navBar{
+  position: relative;
+  z-index: 999;
+  &.navFix{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    &.index{
+      background: rgba(36, 104, 152, 0.9);
+    }
+    &.industryDev{
+      background: rgba(25, 63, 127, 0.9);
+    }
+    &.companyRes{
+      background: rgba(67, 98, 183, 0.9);
+    }
+    &.illegalAct{
+      background: rgba(47, 70, 98, 0.9);
+    }
+  }
+  &.notTransparent{
+    background: rgba(47, 70, 98, 0.9);
+  }
+  .wrap{
+    .logo{
+      width: 250px;
+      height: 100%;
+      float: left;
+      .img{
+        position: relative;
+        float: left;
+        //width: 45px;
+        width: 80%;
+        height: 80%;
+        //margin-top: 10px;
+        font-size: 0;
+        img{
+          width: 100%;
+        }
+      }
+      .imgTxt{
+        float: left;
+        margin-left: 10px;
+        >p:nth-of-type(1){
+          color: #fff;
+          font-size: @font16;
+          margin-top: 5px;
+        }
+        >p:nth-of-type(2){
+          color: #fff;
+          font-size: @font22;
+          font-weight: bold;
+          letter-spacing: 4px;
+        }
+      }
+    }
+    .navRight{
+      float: right;
+      .el-menu-demo{
+        float: left;
+        background: none;
+      }
+      .companyEntry{
+        float: left;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-left: 1px solid @borderColor;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 0;
+        >a:nth-of-type(1){
+          color: #fff;
+          font-size: @font14;
+          padding-right: 16px;
+          opacity: .85;
+          margin-right: 10px;
+        }
+        >a:nth-of-type(2){
+          cursor: pointer;
+          padding: 8px 15px;
+          background: #00dbe3;
+          border-radius: 4px;
+          color: #fff;
+          font-size: 14px;
+          width: 50px;
+          height: 30px;
+        }
+      }
+      .searchWrap{
+        float: left;
+        font-size: 0;
+        i.iconfont{
+          color: #fff;
+          line-height: 60px;
+          cursor: pointer;
+          margin-left: 10px;
+        }
+      }
+      .searchContent{
+        float: left;
+        width: 180px;
+        padding-top: 7px;
+        font-size: 0;
+      }
+      ul>li{
+        font-size: @font14;
+        opacity: .9;
+      }
+      li .el-submenu__title{
+        font-size: @font14 !important;
+        opacity: .9;
+      }
+    }
+    .navChange{
+      font-size: @font14;
+      opacity: .85;
+    }
+  }
+  .mapShow{
+    font-size: @font14;
+    opacity: .9;
+  }
+}

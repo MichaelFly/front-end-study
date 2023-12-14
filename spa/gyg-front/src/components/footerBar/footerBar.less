@@ -1,0 +1,119 @@
+.footer{
+  width: 100%;
+  padding-bottom: 30px;
+  &.notTransparent{
+    background: rgba(47, 70, 98, 0.9);
+  }
+  &.index{
+    background: rgba(36, 104, 152, 0.9);
+  }
+  &.industryDev{
+    background: rgba(25, 63, 127, 0.9);
+  }
+  &.companyRes{
+    background: rgba(67, 98, 183, 0.9);
+  }
+  &.illegalAct{
+    background: rgba(47, 70, 98, 0.9);
+  }
+  .content{
+    width: 1200px;
+    margin: 0 auto;
+    .relationship{
+      margin-top: 30px;
+      font-size: 14px;
+      color: rgba(255,255,255,.9);
+      >label{
+        float: left;
+        width: 80px;
+        font-size: 15px;
+        //font-weight: bold;
+      }
+      .relationshipList{
+        float: right;
+        width: 1110px;
+        >a{
+          color:rgba(255,255,255,.8);
+          display: inline-block;
+          padding: 0 14px;
+          border-right: 2px solid #cbccd0;
+          cursor: pointer;
+          margin-bottom: 20px;
+          &:last-of-type{
+            border-right: none;
+          }
+        }
+      }
+    }
+    .footerContent{
+      margin-top: 50px;
+      .left{
+        float: left;
+        width: 260px;
+        font-size: 0;
+        .imgWrap{
+          display: inline-block;
+          width: 70px;
+          height: 100px;
+          margin-right: 30px;
+          .img{
+            width: 70px;
+            height: 70px;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          p {
+            text-align: center;
+            margin-top: 5px;
+            font-size: @font12;
+            color: rgba(255, 255, 255, .5);
+          }
+        }
+      }
+      .mid{
+        width: 800px;
+        float: left;
+        >div{
+          float: left;
+          width: 300px;
+          font-size: @font12;
+          color: rgba(255,255,255,.5);
+          p{
+            margin-bottom: 10px;
+          }
+        }
+        >div:nth-of-type(2){
+          margin-left: 100px;
+        }
+      }
+      .right{
+        width: 160px;
+        float: right;
+        padding-top: 30px;
+        font-size: 0;
+        .img{
+          float: left;
+          &:last-of-type{
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
+.coverWrap{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  margin-top: -250px;
+  background: red;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}

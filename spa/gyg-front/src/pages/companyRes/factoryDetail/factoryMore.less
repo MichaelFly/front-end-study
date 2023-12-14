@@ -1,0 +1,20 @@
+.wrap{
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: -100px;
+  .sort{
+    margin-top: 20px;
+    font-size: @font16;
+    //margin-bottom: 20px;
+    >span{
+      border: 1px solid @borderColor;
+      padding: 10px;
+      margin-right: 10px;
+      cursor: pointer;
+      &.active{
+        background: @bannerbgColor;
+      }
+    }
+  }
+}

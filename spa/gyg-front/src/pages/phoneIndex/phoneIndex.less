@@ -1,0 +1,375 @@
+.phoneIndexWrap{
+  .banner{
+    width: 100%;
+    height: 17.74rem;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .statistics{
+    width: 100%;
+    height: 1.46rem;
+    background: #3fe8e8;
+    .item{
+      float: left;
+      width: 25%;
+      color: #fff;
+      text-align: center;
+      padding-top: 0.2rem;
+      h3{
+        max-width: 100%;
+        overflow: hidden;
+        font-size: 0.48rem;
+        font-weight: bold;
+        >span{
+          margin-left: 0.2rem;
+          font-weight: normal;
+          font-size: 0.3rem;
+        }
+      }
+      p{
+        font-size: 0.36rem;
+      }
+    }
+  }
+  .parkTrends{
+    padding: 0.6rem 0.4rem 0.2rem 0.4rem;
+    .item{
+      margin-bottom: 0.6rem;
+      .img{
+        float: left;
+        width: 3.2rem;
+        height: 2.4rem;
+      }
+      .content{
+        float: right;
+        width: 6.35rem;
+        height: 2.4rem;
+        h3{
+          color: @color1;
+          font-size: 0.45rem;
+          height: 1.2rem;
+          line-height: 1.2;
+          overflow: hidden;
+          font-weight: bold;
+        }
+        .itemFoot{
+          padding-bottom: 0.3rem;
+          border-bottom: 0.03rem solid #eaeaea;
+          margin-top: 0.54rem;
+          >span.phoneNewsType{
+            float: left;
+            font-size: 0.3rem;
+          }
+          >span.time{
+            float: right;
+            font-size: 0.3rem;
+            color: #bbbbbb;
+            margin-top: 0.05rem;
+          }
+        }
+      }
+    }
+    .more{
+      margin-bottom: 0.2rem;
+      span{
+        display: block;
+        margin: 0 auto;
+        width: 2.4rem;
+        height: 0.7rem;
+        cursor: pointer;
+        text-align: center;
+        line-height: 0.7rem;
+        border: 0.01rem solid @moreColor;
+        color: @moreColor;
+        font-size: 0.36rem;
+        border-radius: 0.04rem;
+      }
+    }
+  }
+  .parkInfo {
+    width: 100%;
+    height: 17.88rem;
+    background: url("./../../../static/images/phoneKnowPark.png") top center;
+    .contentWrap{
+      width: 9.6rem;
+      margin: 1rem auto 0;
+      box-sizing: border-box;
+      padding: 1.5rem 0.9rem 1.1rem 0.9rem;
+      background: rgba(255, 255, 255, 0.18);
+      color: #fff;
+      font-size: 0.42rem;
+      text-align: justify;
+      .btnWrap{
+        height: 0.8rem;
+        margin-top: 0.6rem;
+        text-align: center;
+        span.blueBtn{
+          display: inline-block;
+          width: 3rem;
+          height: 0.75rem;
+          border-radius: 0.4rem;
+          cursor: pointer;
+          background: linear-gradient(30deg, #02acfe, #02acfe);
+          text-align: center;
+          line-height: 0.75rem;
+          color: #ffffff;
+          font-size: 0.36rem;
+          margin-right: 0.3rem;
+        }
+        span.greenBtn{
+          display: inline-block;
+          width: 3rem;
+          height: 0.75rem;
+          border-radius: 0.4rem;
+          cursor: pointer;
+          background: linear-gradient(30deg, #1de9b6, #1dc8ce);
+          text-align: center;
+          line-height: 0.75rem;
+          color: #ffffff;
+          font-size: 0.36rem;
+        }
+      }
+      >p{
+        text-indent: 2em;
+      }
+    }
+  }
+  .joinContent{
+    margin-top: 0.8rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    .item{
+      float: left;
+      width: 4.6rem;
+      padding-top: 0.4rem;
+      padding-bottom: 0.4rem;
+      margin-right: 0.4rem;
+      margin-bottom: 0.4rem;
+      cursor: pointer;
+      font-size: 0.14rem;
+      &:nth-of-type(2n){
+        margin-right: 0;
+      }
+      box-shadow: 0 1px 10px rgba(51, 51, 51, 0.15);
+      &:hover{
+        background: #2ed8ff;
+        .boxShadow();
+        .img{
+          background: #fff;
+          i.iconfont{
+            color: #2ed8ff;
+          }
+        }
+        h3{
+          color: #fff;
+        }
+        .detailContent{
+          color: #fff;
+        }
+      }
+      .img{
+        width: 0.9rem;
+        height: 0.9rem;
+        margin: 0 auto;
+        text-align: center;
+        >img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      h3{
+        text-align: center;
+        margin-top: 0.3rem;
+        color: @color2;
+        font-size: 0.39rem;
+        font-weight: bold;
+      }
+      .detailContent{
+        width: 3.6rem;
+        height: 1.5rem;
+        margin: 0.3rem auto 0.25rem;
+        color: @color3;
+        font-size: 0.36rem;
+        line-height: 0.5rem;
+        overflow: hidden;
+      }
+    }
+  }
+  .parkMap{
+    width: 100%;
+    height: 17.86rem;
+    background: url("./../../../static/images/phoneParkMap.png") top center;
+    .mapContent{
+      margin-top: 1.1rem;
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+      .item{
+        width: 100%;
+        padding: 0.3rem 0.6rem 0.4rem 0.6rem;
+        margin-bottom: 0.6rem;
+        box-sizing: border-box;
+        .boxShadow();
+        &:nth-of-type(1){
+          background: linear-gradient(to bottom right, #02c9c9 , #08e4e4);
+        }
+        &:nth-of-type(2){
+          background: linear-gradient(to bottom right, #5180ed , #25d0fd);
+        }
+        &:last-of-type{
+          margin-right: 0;
+          background: linear-gradient(to bottom right, #28c192 , #4bcd75);
+        }
+        h3{
+          color: #fff;
+          height: 0.6rem;
+          line-height: 0.6rem;
+          font-size: 0.36rem;
+          font-weight: bold;
+          >span{
+            float: left;
+            display: block;
+            width: 0.6rem;
+            height: 0.6rem;
+            text-align: center;
+            border-radius: 0.3rem;
+            background: rgba(255, 255, 255, 0.4);
+            margin-right: 0.15rem;
+            >i.iconfont{
+              font-size: 0.32rem;
+            }
+          }
+        }
+        p{
+          color: #fff;
+          width: 100%;
+          height: 1.5rem;
+          overflow: hidden;
+          margin-top: 0.2rem;
+          margin-bottom: 35px;
+          font-size: 0.36rem;
+          line-height: 0.5rem;
+          text-align: justify;
+        }
+        .btnWrap{
+          a{
+            display: block;
+            width: 2rem;
+            height: 0.7rem;
+            border-radius: 0.35rem;
+            border: 0.02rem solid #fff;
+            line-height: 0.7rem;
+            text-align: center;
+            cursor: pointer;
+            font-size: 0.32rem;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .parkCompany{
+    width: 9.6rem;
+    margin: 0 auto;
+    .parkCompanyList{
+      margin-top: 0.7rem;
+      .item{
+        margin-bottom: 0.4rem;
+        .logoImg{
+          float: left;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 0.2rem;
+          border: 0.01rem solid #dfdfdf;
+          box-shadow:-0.1rem 0 0.3rem rgba(0,0,0,0.1);
+          img{
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+        .title{
+          float: left;
+          width: 7.5rem;
+          height: 1.8rem;
+          line-height: 1.8rem;
+          border-radius: 0 0.2rem 0.2rem 0;
+          font-size: 0.39rem;
+          color: @color2;
+          padding-left: 0.6rem;
+          box-sizing: border-box;
+          font-weight: bold;
+          box-shadow: 0.06rem 0 0.3rem rgba(0,0,0,0.12);
+          margin-top: 0.1rem;
+          .textOverflow();
+        }
+      }
+    }
+    .more{
+      margin-top: 0.6rem;
+      margin-bottom: 1.1rem;
+      span{
+        display: block;
+        margin: 0 auto;
+        width: 2.4rem;
+        height: 0.7rem;
+        cursor: pointer;
+        text-align: center;
+        line-height: 0.7rem;
+        border: 0.01rem solid @moreColor;
+        color: @moreColor;
+        font-size: 0.36rem;
+        border-radius: 0.04rem;
+      }
+    }
+  }
+}
+
+
+.blueTitle{
+  height: 1rem;
+  text-align: center;
+  padding-top: 0.54rem;
+  h3{
+    font-size: 0.54rem;
+    color: @blueTitle;
+    font-weight: bold;
+  }
+  h4{
+    font-size: 0.3rem;
+    color: @blueSecondTitle;
+  }
+}
+/*新闻类型*/
+.phoneNewsType {
+  display: inline-block;
+  height: .45rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  line-height: .45rem;
+  color: #fff;
+  &.type1 {
+    background: #6ce4ff;
+  }
+  &.type2 {
+    background: #fc8f8f;
+  }
+  &.type3 {
+    background: #9ebcfe;
+  }
+}
+.whiteTitle{
+  height: 1rem;
+  text-align: center;
+  padding-top: 0.54rem;
+  h3{
+    font-size: 0.54rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  h4{
+    font-size: 0.3rem;
+    color: #fff;
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .wrap{
+        height: 2200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top {
+        background: aqua;
+    }
+    .bottom{
+        background: yellow;
+    }
+</style>
+<body>
+<div id="wrap" class="wrap">
+    <div class="top" onclick="scrollToBottom()">to bottom</div>
+    <div class="bottom" onclick="scrollToTop()">to top</div>
+</div>
+<script>
+    const scrollToTop = () => {
+        wrap.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    const scrollToBottom = () => {
+        wrap.scrollIntoView({ behavior: "smooth", block: "end" });
+    }
+</script>
+</body>
+</html>

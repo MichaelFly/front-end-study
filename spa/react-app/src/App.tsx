@@ -8,6 +8,7 @@
 // import DomToImg from './DomToImg'
 // import WebAuthnSupport from './WebAuthnSupport'
 import ScratchCard from './ScratchCard'
+import ChildToParent from "./ChildToParent";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       {/*<WebRtc />*/}
       {/*<DomToImg />*/}
       {/*  <WebAuthnSupport/>*/}
-        <ScratchCard/>
+      {/*  <ScratchCard/>*/}
+        <ChildToParent/>
     </div>
   );
 }

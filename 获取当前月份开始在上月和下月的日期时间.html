@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const today = new Date();
+    const currentMonth = today.getMonth();
+    const currentYear = today.getFullYear();
+
+    // 获取当前月份的第一天
+    const firstDayOfMonth = new Date(currentYear, currentMonth, 1);
+
+    // 获取当前月份的最后一天
+    const lastDayOfMonth = new Date(currentYear, currentMonth + 1, 0);
+
+    // 获取当前月份显示的第一周的第一天（可能是上个月的日期）
+    const firstVisibleDay = new Date(firstDayOfMonth);
+    // console.log(firstVisibleDay.getDate() - firstDayOfMonth.getDay())
+    firstVisibleDay.setDate(firstVisibleDay.getDate() - firstDayOfMonth.getDay());
+    console.log(firstVisibleDay)
+
+    // 获取当前月份显示的最后一周的最后一天（可能是下个月的日期）
+    const lastVisibleDay = new Date(lastDayOfMonth);
+    // console.log(lastVisibleDay.getDate() + (6 - lastDayOfMonth.getDay()))
+    lastVisibleDay.setDate(lastVisibleDay.getDate() + (6 - lastDayOfMonth.getDay()));
+    console.log(lastVisibleDay)
+</script>
+</body>
+</html>

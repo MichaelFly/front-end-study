@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<script>
+    const demoArr = {
+        "nodePath":"062421231260047",
+        "last_value:Total_flow_03":0,
+        "mk":"AAB1n40w8A",
+        "last_value:Total_flow_01":1
+    }
+
+    const dic = {
+        'last_value:Total_flow_03':'肿瘤3楼累积量',
+        'last_value:Total_flow_01':'肿瘤2楼累积量'
+    }
+
+    const format = (data)=>{
+        const keys = Object.keys(data).filter(key=>key!=='mk'&&key!=='nodePath');
+        return keys.map(key=>{
+            return {key,val:data[key]}
+        })
+    }
+
+    const result  = format(demoArr);
+    console.log(result)
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+@import "src/base";
+.nutui-react-demo{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .content{
+    width: 300px;
+    .form-wap{
+      width: 95%;
+      margin: 32px auto 0 auto;
+      .nut-cell-group__wrap {
+        background-color:transparent;
+      }
+      .form-label{
+        font-size: 14px;
+        color: $text40;
+        margin-bottom: 10px;
+      }
+      .nut-form-item{
+        border-radius: 8px;
+        height: 46px;
+        box-shadow: 2px 5px 14px 0px #8081912E;
+      }
+      .nut-cell:last-child{
+        padding: 0;
+        background-color:transparent;
+      }
+      .login-btn{
+        height: 54px;
+        border-radius: 8px;
+        margin-top: 32px;
+        background-color:$sub03;
+      }
+      .nut-form-item__body__tips{
+        margin-top: 10px;
+        color: #fa2c19;
+      }
+    }
+  }
+}
+
+

@@ -1,4 +1,5 @@
 import {forwardRef, useImperativeHandle, useState} from "react";
+import {a} from "./a";
 
 const Child = forwardRef(function Child(props, ref) {
     const [state,setState] = useState(1)
@@ -10,6 +11,8 @@ const Child = forwardRef(function Child(props, ref) {
 
         };
     }, [state]);
+
+    console.log(a)
 
     return <div>
         <div>state:{state}</div>

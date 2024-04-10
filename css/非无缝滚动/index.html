@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="wrap">
+    <div class="content">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</div>
+<script>
+    const ds = {
+        "nodePath": "062421231260047",
+        "last_value:flow_rate_10": 6.511,
+        "last_value:flow_rate_41": 0,
+        "last_value:flow_rate_40": 2.328,
+        "last_value:flow_rate_14": 0,
+        "last_value:flow_rate_03": 63.821,
+        "last_value:flow_rate_13": 7.291,
+        "last_value:flow_rate_02": 15.953,
+        "last_value:flow_rate_12": 4.152,
+        "last_value:flow_rate_01": 37.125,
+        "last_value:flow_rate_11": 34.476,
+        "last_value:flow_rate_07": 10.543,
+        "last_value:flow_rate_06": 19.95,
+        "last_value:flow_rate_17": 42.913,
+        "last_value:flow_rate_39": 14.493,
+        "last_value:flow_rate_16": 18.386,
+        "last_value:flow_rate_05": 5.248,
+        "last_value:flow_rate_15": 8.625,
+        "last_value:flow_rate_04": 50.782,
+        "last_value:flow_rate_09": 57.714,
+        "last_value:flow_rate_08": 0,
+        "mk": "AAB1n40w8A"
+    }
+    const dic = [
+        {
+            key:'last_value:flow_rate_17',
+            name:'麻醉科一区'
+        },{
+            key:'last_value:flow_rate_16',
+            name:'战创伤科'
+        },{
+            key:'last_value:flow_rate_15',
+            name:'骨科三'
+        },{
+            key:'last_value:flow_rate_14',
+            name:'骨科二'
+        },{
+            key:'last_value:flow_rate_13',
+            name:'骨科一'
+        },{
+            key:'last_value:flow_rate_12',
+            name:'眼耳鼻喉科'
+        },{
+            key:'last_value:flow_rate_11',
+            name:'神经内科/外科'
+        },{
+            key:'last_value:flow_rate_10',
+            name:'烧伤科'
+        },{
+            key:'last_value:flow_rate_09',
+            name:'重症ICU'
+        },{
+            key:'last_value:flow_rate_08',
+            name:'消化内科'
+        },{
+            key:'last_value:flow_rate_07',
+            name:'内分泌心血管'
+        },{
+            key:'last_value:flow_rate_06',
+            name:'干部病房8楼'
+        },{
+            key:'last_value:flow_rate_05',
+            name:'干部病房7楼'
+        },{
+            key:'last_value:flow_rate_04',
+            name:'呼吸内科'
+        },{
+            key:'last_value:flow_rate_03',
+            name:'心胸外科'
+        },{
+            key:'last_value:flow_rate_02',
+            name:'肿瘤4楼'
+        },{
+            key:'last_value:flow_rate_01',
+            name:'肿瘤3楼'
+        },{
+            key:'last_value:flow_rate_39',
+            name:'感染科'
+        },{
+            key:'last_value:flow_rate_40',
+            name:'轮训队'
+        },{
+            key:'last_value:flow_rate_41',
+            name:'发热门诊（新楼）'
+        },
+    ]
+
+    const format = dic.map(item=> ({name:item.name,val:ds[item.key]||''}))
+    console.log('format',format)
+
+
+    const dic1 = [
+        {
+            key:'last_value:flow_rate_37',
+            name:'生殖中心22楼'
+        },{
+            key:'last_value:flow_rate_36',
+            name:'麻醉科二区'
+        },{
+            key:'last_value:flow_rate_35',
+            name:'产科20B'
+        },{
+            key:'last_value:flow_rate_34',
+            name:'产科20A'
+        },{
+            key:'last_value:flow_rate_33',
+            name:'产科19'
+        },{
+            key:'last_value:flow_rate_32',
+            name:'儿科'
+        },{
+            key:'last_value:flow_rate_31',
+            name:'妇科17楼'
+        },{
+            key:'last_value:flow_rate_30',
+            name:'妇科16楼'
+        },{
+            key:'last_value:flow_rate_29',
+            name:'泌尿外科'
+        },{
+            key:'last_value:flow_rate_28',
+            name:'普外14楼'
+        },{
+            key:'last_value:flow_rate_27',
+            name:'普外13楼'
+        },{
+            key:'last_value:flow_rate_26',
+            name:'心肾内科'
+        },{
+            key:'last_value:flow_rate_25',
+            name:'血透室'
+        },{
+            key:'last_value:flow_rate_24',
+            name:'中医科'
+        },{
+            key:'last_value:flow_rate_23',
+            name:'内镜中心'
+        },{
+            key:'last_value:flow_rate_22',
+            name:'妇产、儿科门诊'
+        },{
+            key:'last_value:flow_rate_21',
+            name:'急诊科'
+        },{
+            key:'last_value:flow_rate_20',
+            name:'门诊大厅'
+        },{
+            key:'last_value:flow_rate_19',
+            name:'影像科'
+        },{
+            key:'last_value:flow_rate_18',
+            name:'放疗科'
+        },{
+            key:'last_value:flow_rate_38',
+            name:'高压氧'
+        },
+    ]
+</script>
+</body>
+</html>

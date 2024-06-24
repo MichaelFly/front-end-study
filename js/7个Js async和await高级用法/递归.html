@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // 异步递归函数
+    async function asyncRecursiveSearch(nodes) {
+        for (const node of nodes) {
+            await asyncProcess(node);
+            if (node.children) {
+                await asyncRecursiveSearch(node.children);
+            }
+        }
+    }
+
+    // 示例
+    async function asyncProcess(node) {
+        // 对节点进行异步处理逻辑
+    }
+
+</script>
+</body>
+</html>

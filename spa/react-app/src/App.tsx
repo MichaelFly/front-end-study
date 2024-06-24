@@ -7,7 +7,7 @@
 // import JsonEdit from './JsonEdit'
 // import DomToImg from './DomToImg'
 // import WebAuthnSupport from './WebAuthnSupport'
-import ScratchCard from './ScratchCard'
+// import ScratchCard from './ScratchCard'
 import ChildToParent from "./ChildToParent";
 
 function App() {

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    class Example {
+        constructor(data) {
+            this.data = data;
+        }
+
+        static async create() {
+            const data = await fetchData(); // 异步获取数据
+            return new Example(data);
+        }
+    }
+
+    // 使用方式
+    Example.create().then((exampleInstance) => {
+        // 使用异步初始化的类实例
+    });
+
+</script>
+</body>
+</html>

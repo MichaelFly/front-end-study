@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    const delay = (ms) =>{
+        return new Promise((resolve) => setTimeout(() => resolve(), ms));
+    }
+
+    // 异步过滤函数
+    async function asyncFilter(array, predicate) {
+        const results = await Promise.all(array.map(predicate));
+        return array.filter((_value, index) => results[index]);
+    }
+
+    // 示例
+    async function isOddNumber(n) {
+        await delay(1000); // 模拟异步操作
+        return n % 2 !== 0;
+    }
+
+    async function filterOddNumbers(numbers) {
+        return asyncFilter(numbers, isOddNumber);
+    }
+
+    filterOddNumbers([1, 2, 3, 4, 5]).then(console.log); // 输出: [1, 3, 5]
+
+</script>
+</body>
+</html>

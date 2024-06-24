@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    async function asyncOperation() {
+        try {
+            const result = await mightFailOperation();
+            return result;
+        } catch (error) {
+            handleAsyncError(error);
+        }
+    }
+
+    async function mightFailOperation() {
+        // 有可能失败的异步操作
+    }
+
+    function handleAsyncError(error) {
+        // 错误处理逻辑
+    }
+
+</script>
+</body>
+</html>

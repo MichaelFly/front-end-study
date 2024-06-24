@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 异步定时器函数
+    async function asyncSetTimeout(fn, ms) {
+        await new Promise(resolve => setTimeout(resolve, ms));
+        fn();
+    }
+
+    // 示例
+    asyncSetTimeout(() => console.log('Timeout after 2 seconds'), 2000);
+
+</script>
+</body>
+</html>

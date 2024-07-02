@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function solveEquation(equation, variable) {
+        // 拆分等号两边
+        const [leftSide, rightSide] = equation.split('=').map(side => side.trim());
+
+        // 使用 Function 构造函数计算右边的值
+        const rightValue = new Function(`return ${rightSide}`)();
+
+        // 替换变量为占位符
+        const placeholder = 'VAR';
+        const expression = leftSide.replace(new RegExp(`\\b${variable}\\b`, 'g'), placeholder);
+
+        // 使用 Function 构造函数创建求值函数
+        const evaluateExpression = new Function(placeholder, `return ${expression}`);
+
+        // 定义求解函数（牛顿迭代法）
+        function findRoot(fn, target, guess = 1, tolerance = 1e-7, maxIterations = 1000) {
+            let x = guess;
+            for (let i = 0; i < maxIterations; i++) {
+                const value = fn(x) - target;
+                if (Math.abs(value) < tolerance) {
+                    return x;
+                }
+                const derivative = (fn(x + tolerance) - fn(x - tolerance)) / (2 * tolerance);
+                x -= value / derivative;
+            }
+            throw new Error('Unable to find root');
+        }
+
+        // 求解变量的值
+        const solution = findRoot(evaluateExpression, rightValue);
+
+        return `The solution is ${variable} = ${solution}`;
+    }
+
+    // 示例用法
+    const equation = 'n*10/(3+2)*(3-2) + n^2 = 8';
+    const variable = 'n';
+
+    // 替换方程中的平方符号 '^' 为 JavaScript 可识别的 '**'
+    const modifiedEquation = equation.replace(/\^/g, '**');
+
+    console.log(solveEquation(modifiedEquation, variable)); // 输出结果可能是 n 的解
+
+</script>
+</body>
+</html>
